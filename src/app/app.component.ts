@@ -17,7 +17,7 @@ import { MgHomePageComponent } from "./components/home-page/home-page.component"
 })
 export class AppComponent {
 
-  title = 'angular-17-mg-framework';
+  title = 'angular-17-mg-portfolio';
   isLogin: any = false;
   isLoginUrl: any = '';
 
