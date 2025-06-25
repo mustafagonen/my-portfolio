@@ -4,7 +4,7 @@
 }
 
 .features {
-    padding: 4rem 2rem;
+    padding: 3rem 2rem;
     background-color: #ffffff;
     text-align: center;
 
@@ -12,6 +12,7 @@
         font-size: 2.5rem;
         color: #10B981;
         margin-bottom: 3rem;
+        margin-top: 0 !important;
     }
 
     .features-grid {
@@ -25,6 +26,7 @@
             border-radius: 1rem;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
 
             &:hover {
                 transform: translateY(-5px);

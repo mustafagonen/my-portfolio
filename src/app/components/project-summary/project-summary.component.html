@@ -1,0 +1,9 @@
+<section class="features">
+    <h2>{{'My Projects' | translate}}</h2>
+    <div class="features-grid">
+        <div class="feature-card" *ngFor="let project of myProjects" (click)="navigateToProjectDetail(project.id)">
+            <h3>{{project.projectName}}</h3>
+            <p>{{project.company}}</p>
+        </div>
+    </div>
+</section>

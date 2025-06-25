@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SharedModule } from '../../shared.module';
-import { MgNavbarComponent } from '../navbar/navbar.component';
 import { MgLandingComponent } from '../landing/landing.component';
-import { MgFooterComponent } from '../footer/footer.component';
-import { MgProjectPageComponent } from '../project-page/project-page.component';
+import { MgProjectSummaryComponent } from '../project-summary/project-summary.component';
 
 @Component({
     selector: 'mg-home-page',
@@ -11,10 +9,8 @@ import { MgProjectPageComponent } from '../project-page/project-page.component';
     styleUrls: ['./home-page.component.scss'],
     imports: [
         SharedModule,
-        MgNavbarComponent,
         MgLandingComponent,
-        MgFooterComponent,
-        MgProjectPageComponent
+        MgProjectSummaryComponent
     ],
     standalone: true
 })

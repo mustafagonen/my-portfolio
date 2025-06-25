@@ -4,6 +4,9 @@ import { LoaderService } from './loader/loader.service';
 import { Router } from '@angular/router';
 import { AppService } from './services/app.service';
 import { MgHomePageComponent } from "./components/home-page/home-page.component";
+import { MgNavbarComponent } from './components/navbar/navbar.component';
+import { MgLandingComponent } from './components/landing/landing.component';
+import { MgFooterComponent } from './components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +14,9 @@ import { MgHomePageComponent } from "./components/home-page/home-page.component"
   styleUrl: './app.component.scss',
   imports: [
     SharedModule,
-    MgHomePageComponent
+    MgNavbarComponent,
+    MgLandingComponent,
+    MgFooterComponent
   ],
   standalone: true
 })
