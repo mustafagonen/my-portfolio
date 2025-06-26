@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { SharedModule } from '../../shared.module';
 import { MgLandingComponent } from '../landing/landing.component';
 import { MgProjectSummaryComponent } from '../project-summary/project-summary.component';
+import { MgTechnologiesComponent } from "../technologies/technologies.component";
+import { MgCompaniesComponent } from "../companies/companies.component";
 
 @Component({
     selector: 'mg-home-page',
@@ -10,7 +12,9 @@ import { MgProjectSummaryComponent } from '../project-summary/project-summary.co
     imports: [
         SharedModule,
         MgLandingComponent,
-        MgProjectSummaryComponent
+        MgProjectSummaryComponent,
+        MgTechnologiesComponent,
+        MgCompaniesComponent
     ],
     standalone: true
 })

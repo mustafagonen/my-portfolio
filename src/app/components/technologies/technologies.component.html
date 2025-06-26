@@ -1,0 +1,9 @@
+<section class="features">
+    <h2>{{'Technologies' | translate}}</h2>
+    <div class="features-grid">
+        <div class="feature-card" *ngFor="let technology of technologies"
+            (click)="navigateToProjectDetail(technology.navigateUrl)">
+            <img *ngIf="technology.imageUrl" class="cursor-pointer" [src]="technology.imageUrl">
+        </div>
+    </div>
+</section>

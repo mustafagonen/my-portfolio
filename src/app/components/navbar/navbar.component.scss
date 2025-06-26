@@ -1,6 +1,6 @@
 :host {
     display: block;
-    color: #111827;
+    color: #374151;
 }
 
 /* Genel Navbar Stilleri */
@@ -8,7 +8,7 @@
     background-color: #F9FAFB;
     padding: 20px 5rem;
     /* Açık gri, mevcut tasarımla uyumlu */
-    color: #111827;
+    color: #374151;
     /* Koyu gri renk */
     position: fixed;
     width: 100%;
@@ -31,7 +31,10 @@
     font-weight: 600;
     text-decoration: none;
     color: #10B981;
-    /* Ana renk olarak yeşil */
+    font-family: "Michroma", sans-serif !important;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: 600;
 }
 
 .navbar-links ul {
@@ -47,9 +50,9 @@
 
 .navbar-links a {
     text-decoration: none;
-    color: #111827;
+    color: #374151;
     /* Koyu gri metin */
-    font-size: 1rem;
+    font-size: 14px;
     transition: color 0.3s ease;
 }
 
@@ -60,6 +63,10 @@
 
 /* Responsive Tasarım */
 @media (max-width: 768px) {
+
+    .navbar {
+        padding: 20px 2rem !important;
+    }
 
     .navbar-links {
         display: none;

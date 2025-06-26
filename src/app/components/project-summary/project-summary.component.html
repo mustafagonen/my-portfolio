@@ -1,9 +1,33 @@
 <section class="features">
-    <h2>{{'My Projects' | translate}}</h2>
+    <a routerLink="/project/list">
+        <h2>{{'Projects' | translate}}</h2>
+    </a>
     <div class="features-grid">
         <div class="feature-card" *ngFor="let project of myProjects" (click)="navigateToProjectDetail(project.id)">
-            <h3>{{project.projectName}}</h3>
-            <p>{{project.company}}</p>
+            <h3 [ngClass]="{
+                'after-hepsiburada': project.id == 1 || project.id == 2,
+                'after-zes': project.id == 3 || project.id == 4,
+                'after-metech': project.id == 5 || project.id == 6 || project.id == 8,
+                'after-greyfood': project.id == 7,
+                'after-hacibayram': project.id == 9 || project.id == 10 || project.id == 11 || project.id == 12,
+                }">
+                {{project.projectName}}</h3>
+            <!-- <p>{{project.company}}</p> -->
+
+            <img *ngIf="project.id == 1 || project.id == 2" class="cursor-pointer" style="height: 104px;"
+                [src]="project.companyImageUrl">
+
+            <img *ngIf="project.id == 3 || project.id == 4" class="cursor-pointer"
+                style="height: 24px; margin-top: 40px;" [src]="project.companyImageUrl">
+
+            <img *ngIf="project.id == 5 || project.id == 6 || project.id == 8" class="cursor-pointer"
+                style="height: 24px; margin-top: 38px;" [src]="project.companyImageUrl">
+
+            <img *ngIf="project.id == 7" class="cursor-pointer" style="height: 28px; margin-top: 36px;"
+                [src]="project.companyImageUrl">
+
+            <img *ngIf=" project.id == 9 || project.id == 10 || project.id == 11 || project.id == 12"
+                class="cursor-pointer" style="height: 40px; margin-top: 38px;" [src]="project.companyImageUrl">
         </div>
     </div>
 </section>

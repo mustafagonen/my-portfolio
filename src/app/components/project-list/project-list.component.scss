@@ -7,18 +7,34 @@ $transition-fast: 0.3s ease;
 $transition-slow: 0.6s ease;
 
 :host {
-    font-family: 'Segoe UI', sans-serif;
     background-color: $background;
     color: $text-dark;
     margin: 0;
-    padding: 2rem;
+    padding: 8rem 5rem;
     line-height: 1.6;
+    display: block;
 }
 
-/* Project Card Container */
+h2 {
+    font-size: 30px;
+    cursor: pointer;
+    color: #10B981;
+    margin-top: 0 !important;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: $accent-color;
+    margin-top: 6px;
+    transition: width $transition-slow;
+}
+
 .project-detail {
     background: white;
-    border-radius: 10px;
+    border-radius: 6px;
     padding: 2rem;
     margin-bottom: 2.5rem;
     box-shadow: $card-shadow;

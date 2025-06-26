@@ -43,33 +43,16 @@ $transition-slow: 1.1s ease;
         width: 0;
         height: 3px;
         background-color: $accent-color;
-        margin-top: 30px;
+        margin-top: 6px;
         transition: width $transition-slow;
     }
 
-    h3.after-hepsiburada::after {
-        background-color: #FF6000;
-    }
-
-    h3.after-zes::after {
-        background: linear-gradient(to right, #48CA93, #48BACA);
-    }
-
-    h3.after-metech::after {
-        background-color: #427FBA;
-    }
-
-    h3.after-greyfood::after {
-        background-color: #009640;
-    }
-
-    h3.after-hacibayram::after {
-        background-color: #ed313a;
-    }
-
-
     .feature-card:hover h3::after {
         width: 100%;
+    }
+
+    .feature-card img {
+        max-width: 100%;
     }
 
     .features-grid {
@@ -84,7 +67,10 @@ $transition-slow: 1.1s ease;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             cursor: pointer;
-            height: 220px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 290px;
 
             &:hover {
                 transform: translateY(-5px);
@@ -93,7 +79,7 @@ $transition-slow: 1.1s ease;
 
             h3 {
                 font-size: 1.5rem;
-                margin-bottom: 0;
+                margin-bottom: 1rem;
                 color: #374151;
             }
 

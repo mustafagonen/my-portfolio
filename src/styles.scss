@@ -65,8 +65,20 @@ img {
     height: auto;
 }
 
+a {
+    text-decoration: unset;
+}
+
 ul {
     list-style-type: none;
+}
+
+.container {
+    width: 100%;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .td-150-overflow {
@@ -194,7 +206,7 @@ textarea:focus-visible {
 .icon-btn {
     border: 0.87px solid #D6DCE5 !important;
     background-color: #F7F9FB;
-    color: #10B981;
+    color: $navyblue;
     font-size: 12px;
     font-weight: 300;
     cursor: pointer;
@@ -346,7 +358,7 @@ textarea:focus-visible {
 .toast-message {
     font-size: 13px;
     margin-top: 0;
-    color: #10B981;
+    color: $navyblue;
     font-weight: 600;
 }
 
@@ -459,7 +471,7 @@ td {
     top: 10px;
     bottom: 0;
     left: 40px;
-    color: #10B981;
+    color: $navyblue;
     font-size: 13px;
     font-weight: 500;
     pointer-events: none;
@@ -534,7 +546,7 @@ td {
 }
 
 .remember-me-text {
-    background: #10B981;
+    background: $navyblue;
     font-size: 12px;
     font-weight: 400;
 }
@@ -941,7 +953,7 @@ td {
 .mg-previous {
     height: 40px;
     width: 40px;
-    border: 1.12px solid #10B981;
+    border: 1.12px solid $navyblue;
     border-radius: 9px;
     display: flex;
     align-items: center;
@@ -955,7 +967,7 @@ td {
 .mg-next {
     height: 40px;
     width: 94px;
-    background-color: #10B981;
+    background-color: $navyblue;
     border-radius: 9px;
     display: flex;
     align-items: center;
@@ -2739,7 +2751,7 @@ input::-webkit-inner-spin-button {
 
         .mg-previous {
             margin-right: 15px;
-            border-color: #10B981;
+            border-color: $navyblue;
             width: 40px;
             height: 40px;
             margin-left: 16px;
@@ -2750,8 +2762,8 @@ input::-webkit-inner-spin-button {
         }
 
         .mg-next {
-            background-color: #10B981;
-            border-color: #10B981;
+            background-color: $navyblue;
+            border-color: $navyblue;
             color: $white;
             height: 40px;
             width: 74px;
