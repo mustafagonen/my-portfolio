@@ -17,7 +17,7 @@ export class MgCompaniesComponent implements OnInit {
         { id: 3, name: "Hacibayram Veli University", imageUrl: "assets/images/technologies/hacibayram.png", navigateUrl: "https://hacibayram.edu.tr/" },
         { id: 4, name: "Tübitak Sage", imageUrl: "assets/images/technologies/sage.png", navigateUrl: "https://tubitak.gov.tr/tr" },
         { id: 5, name: "MeTech Digital", imageUrl: "assets/images/technologies/metech.svg", navigateUrl: "https://metechdigital.com/" },
-        { id: 5, name: "Greyfood", imageUrl: "assets/images/technologies/greyfood.webp", navigateUrl: "https://www.greyfood.com/" }
+        { id: 6, name: "Greyfood", imageUrl: "assets/images/technologies/greyfood.webp", navigateUrl: "https://www.greyfood.com/" }
     ];
 
     constructor(

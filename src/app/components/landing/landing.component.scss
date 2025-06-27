@@ -84,7 +84,7 @@
             }
 
             .btn-primary {
-                background-color: #10B981;
+                background: linear-gradient(90deg, #10B981, #48BACA);
                 color: #ffffff;
                 border: none;
 
@@ -118,11 +118,11 @@
         justify-content: end;
         align-items: center;
         animation: fadeInRight 1s ease-out;
-        margin-top: 60px;
+        margin-top: 40px;
 
         img {
-            width: 300px;
-            height: 300px;
+            width: 260px;
+            height: 260px;
             object-fit: cover;
             border-radius: 50%;
             background: #ffffff;
@@ -133,8 +133,32 @@
 /* Responsive Tasarım */
 @media (max-width: 768px) {
 
+    .mobile-wrapper {
+        flex-direction: row;
+    }
+
+    .mobile-line {
+        display: none;
+    }
+
+    .mobile-margin {
+        margin-top: 4px;
+    }
+
     .landing {
-        padding: 6rem 2rem !important;
+        padding: 3rem 2rem !important;
+    }
+
+    .visual {
+        justify-content: center !important;
+        margin-top: 0 !important;
+    }
+
+    .visual {
+        img {
+            width: 200px !important;
+            height: 200px !important;
+        }
     }
 }
 

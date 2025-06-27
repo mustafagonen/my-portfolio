@@ -1,9 +1,131 @@
 <section class="features">
     <h2>{{'Companies' | translate}}</h2>
     <div class="features-grid">
-        <div class="feature-card" *ngFor="let company of companies"
-            (click)="navigateToProjectDetail(company.navigateUrl)">
+        <div class="feature-card" [ngClass]="{
+            'hepsiburada-effect': company.id == 1,
+            'zes-effect': company.id == 2,
+            'hacibayram-effect': company.id == 3,
+            'tubitak-effect': company.id == 4,
+            'metech-effect': company.id == 5,
+            'greyfood-effect': company.id == 6,
+            }" *ngFor="let company of companies" (click)="navigateToProjectDetail(company.navigateUrl)">
             <img *ngIf="company.imageUrl" class="cursor-pointer" [src]="company.imageUrl">
         </div>
     </div>
 </section>
+
+<style>
+    .hepsiburada-effect {
+        --c: #FF6000;
+        --b: 6px;
+        --g: 5px;
+
+        padding: calc(var(--g) + var(--b));
+        --_g: #0000 25%, var(--c) 0;
+        background:
+            conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) var(--_i, 200%) 0 /200% var(--_i, var(--b)) no-repeat,
+            conic-gradient(at bottom var(--b) left var(--b), var(--_g)) 0 var(--_i, 200%)/var(--_i, var(--b)) 200% no-repeat !important;
+        transition: .3s, background-position .3s .3s !important;
+        cursor: pointer;
+    }
+
+    .hepsiburada-effect:hover {
+        --_i: 100% !important;
+        transition: .3s, background-size .3s .3s !important;
+    }
+
+    .zes-effect {
+        --c: #48CA93;
+        --b: 6px;
+        --g: 5px;
+
+        padding: calc(var(--g) + var(--b));
+        --_g: #0000 25%, var(--c) 0;
+        background:
+            conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) var(--_i, 200%) 0 /200% var(--_i, var(--b)) no-repeat,
+            conic-gradient(at bottom var(--b) left var(--b), var(--_g)) 0 var(--_i, 200%)/var(--_i, var(--b)) 200% no-repeat !important;
+        transition: .3s, background-position .3s .3s !important;
+        cursor: pointer;
+    }
+
+    .zes-effect:hover {
+        --_i: 100% !important;
+        transition: .3s, background-size .3s .3s !important;
+    }
+
+    .hacibayram-effect {
+        --c: #ed313a;
+        --b: 6px;
+        --g: 5px;
+
+        padding: calc(var(--g) + var(--b));
+        --_g: #0000 25%, var(--c) 0;
+        background:
+            conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) var(--_i, 200%) 0 /200% var(--_i, var(--b)) no-repeat,
+            conic-gradient(at bottom var(--b) left var(--b), var(--_g)) 0 var(--_i, 200%)/var(--_i, var(--b)) 200% no-repeat !important;
+        transition: .3s, background-position .3s .3s !important;
+        cursor: pointer;
+    }
+
+    .hacibayram-effect:hover {
+        --_i: 100% !important;
+        transition: .3s, background-size .3s .3s !important;
+    }
+
+    .tubitak-effect {
+        --c: #000000;
+        --b: 6px;
+        --g: 5px;
+
+        padding: calc(var(--g) + var(--b));
+        --_g: #0000 25%, var(--c) 0;
+        background:
+            conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) var(--_i, 200%) 0 /200% var(--_i, var(--b)) no-repeat,
+            conic-gradient(at bottom var(--b) left var(--b), var(--_g)) 0 var(--_i, 200%)/var(--_i, var(--b)) 200% no-repeat !important;
+        transition: .3s, background-position .3s .3s !important;
+        cursor: pointer;
+    }
+
+    .tubitak-effect:hover {
+        --_i: 100% !important;
+        transition: .3s, background-size .3s .3s !important;
+    }
+
+    .metech-effect {
+        --c: #427FBA;
+        --b: 6px;
+        --g: 5px;
+
+        padding: calc(var(--g) + var(--b));
+        --_g: #0000 25%, var(--c) 0;
+        background:
+            conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) var(--_i, 200%) 0 /200% var(--_i, var(--b)) no-repeat,
+            conic-gradient(at bottom var(--b) left var(--b), var(--_g)) 0 var(--_i, 200%)/var(--_i, var(--b)) 200% no-repeat !important;
+        transition: .3s, background-position .3s .3s !important;
+        cursor: pointer;
+    }
+
+    .metech-effect:hover {
+        --_i: 100% !important;
+        transition: .3s, background-size .3s .3s !important;
+    }
+
+    .greyfood-effect {
+        --c: #009640;
+        --b: 6px;
+        --g: 5px;
+
+        padding: calc(var(--g) + var(--b));
+        --_g: #0000 25%, var(--c) 0;
+        background:
+            conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) var(--_i, 200%) 0 /200% var(--_i, var(--b)) no-repeat,
+            conic-gradient(at bottom var(--b) left var(--b), var(--_g)) 0 var(--_i, 200%)/var(--_i, var(--b)) 200% no-repeat !important;
+        transition: .3s, background-position .3s .3s !important;
+        cursor: pointer;
+    }
+
+    .greyfood-effect:hover {
+        --_i: 100% !important;
+        transition: .3s, background-size .3s .3s !important;
+    }
+</style>

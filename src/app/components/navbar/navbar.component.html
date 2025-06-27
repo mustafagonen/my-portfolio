@@ -1,6 +1,6 @@
 <header class="navbar">
     <div class="navbar-container">
-        <a routerLink="/" class="navbar-logo">M.Gnn</a>
+        <a routerLink="/" class="navbar-logo gradient-logo">M.GNN</a>
         <nav class="navbar-links">
             <ul>
                 <li><a routerLink="/">{{'Home' | translate}}</a></li>
@@ -10,5 +10,14 @@
                 <li><a routerLink="contact">{{'Contact' | translate}}</a></li>
             </ul>
         </nav>
+
+        <div class="mobile-menu-icon">
+            <div #mobileMenu id="mobileMenu" class="hamburger" (click)="toggleMenuWrapper()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
     </div>
 </header>

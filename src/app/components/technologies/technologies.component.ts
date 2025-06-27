@@ -27,8 +27,8 @@ export class MgTechnologiesComponent implements OnInit {
         { id: 13, name: "Linux", imageUrl: "assets/images/technologies/linux-ar21.svg", navigateUrl: "https://ubuntu.com/" },
         { id: 14, name: "MySql", imageUrl: "assets/images/technologies/mysql-ar21.svg", navigateUrl: "https://www.mysql.com/" },
         { id: 15, name: "Figma", imageUrl: "assets/images/technologies/figma-ar21.svg", navigateUrl: "https://www.figma.com/" },
-        { id: 15, name: "Zeplin", imageUrl: "assets/images/technologies/zeplinio-ar21.svg", navigateUrl: "https://zeplin.io/" },
-        { id: 16, name: "Jira", imageUrl: "assets/images/technologies/atlassian_jira-ar21.svg", navigateUrl: "https://www.atlassian.com/software/jira" },
+        { id: 16, name: "Zeplin", imageUrl: "assets/images/technologies/zeplinio-ar21.svg", navigateUrl: "https://zeplin.io/" },
+        { id: 17, name: "Jira", imageUrl: "assets/images/technologies/atlassian_jira-ar21.svg", navigateUrl: "https://www.atlassian.com/software/jira" },
     ];
 
     constructor(

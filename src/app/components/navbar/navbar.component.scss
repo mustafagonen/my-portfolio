@@ -37,6 +37,8 @@
     font-weight: 600;
 }
 
+
+
 .navbar-links ul {
     list-style-type: none;
     margin: 0;
@@ -61,8 +63,65 @@
     /* Hoverda yeşil renk */
 }
 
+.mobile-menu-icon {
+    display: none;
+}
+
+.hamburger {
+    width: 35px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    position: relative;
+}
+
+.hamburger span {
+    height: 4px;
+    width: 100%;
+    background-color: #10B981;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    left: 0;
+}
+
+/* 3 çizginin konumları */
+.hamburger span:nth-child(1) {
+    top: 0;
+}
+
+.hamburger span:nth-child(2) {
+    top: 10px;
+}
+
+.hamburger span:nth-child(3) {
+    top: 20px;
+}
+
+/* Aktif hale geldiğinde X'e dönüşüm */
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 10px;
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 10px;
+}
+
+
 /* Responsive Tasarım */
 @media (max-width: 768px) {
+
+    .mobile-menu-icon {
+        display: block;
+    }
 
     .navbar {
         padding: 20px 2rem !important;

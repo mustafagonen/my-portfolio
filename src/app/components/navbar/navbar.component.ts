@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { SharedModule } from '../../shared.module';
 
 @Component({
@@ -11,7 +11,14 @@ import { SharedModule } from '../../shared.module';
     standalone: true
 })
 export class MgNavbarComponent implements OnInit {
+
+    @ViewChild('mobileMenu') mobileMenu!: ElementRef;
+
     constructor() { }
 
     ngOnInit(): void { }
+
+    toggleMenuWrapper() {
+        this.mobileMenu.nativeElement.classList.toggle('active');
+    }
 }

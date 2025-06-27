@@ -1,9 +1,351 @@
 <section class="features">
     <h2>{{'Technologies' | translate}}</h2>
     <div class="features-grid">
-        <div class="feature-card" *ngFor="let technology of technologies"
-            (click)="navigateToProjectDetail(technology.navigateUrl)">
+        <div class="feature-card" [ngClass]="{
+            'angular-effect': technology.id == 1,
+            'vue-effect': technology.id == 2,
+            'node-effect': technology.id == 3,
+            'net-effect': technology.id == 4,
+            'html-effect': technology.id == 5,
+            'css-effect': technology.id == 6,
+            'typescript-effect': technology.id == 7,
+            'js-effect': technology.id == 8,
+            'git-effect': technology.id == 9,
+            'gitlab-effect': technology.id == 10,
+            'tailwind-effect': technology.id == 11,
+            'microsoft-effect': technology.id == 12,
+            'linux-effect': technology.id == 13,
+            'mysql-effect': technology.id == 14,
+            'figma-effect': technology.id == 15,
+            'zeplin-effect': technology.id == 16,
+            'jira-effect': technology.id == 17,
+            }" *ngFor="let technology of technologies" (click)="navigateToProjectDetail(technology.navigateUrl)">
             <img *ngIf="technology.imageUrl" class="cursor-pointer" [src]="technology.imageUrl">
         </div>
     </div>
 </section>
+
+<style>
+    .angular-effect {
+        --c: #B52E31;
+        --b: 6px;
+        --g: 5px;
+
+        padding: calc(var(--g) + var(--b));
+        --_g: #0000 25%, var(--c) 0;
+        background:
+            conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) var(--_i, 200%) 0 /200% var(--_i, var(--b)) no-repeat,
+            conic-gradient(at bottom var(--b) left var(--b), var(--_g)) 0 var(--_i, 200%)/var(--_i, var(--b)) 200% no-repeat !important;
+        transition: .3s, background-position .3s .3s !important;
+        cursor: pointer;
+    }
+
+    .angular-effect:hover {
+        --_i: 100% !important;
+        transition: .3s, background-size .3s .3s !important;
+    }
+
+    .vue-effect {
+        --c: #41B883;
+        --b: 6px;
+        --g: 5px;
+
+        padding: calc(var(--g) + var(--b));
+        --_g: #0000 25%, var(--c) 0;
+        background:
+            conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) var(--_i, 200%) 0 /200% var(--_i, var(--b)) no-repeat,
+            conic-gradient(at bottom var(--b) left var(--b), var(--_g)) 0 var(--_i, 200%)/var(--_i, var(--b)) 200% no-repeat !important;
+        transition: .3s, background-position .3s .3s !important;
+        cursor: pointer;
+    }
+
+    .vue-effect:hover {
+        --_i: 100% !important;
+        transition: .3s, background-size .3s .3s !important;
+    }
+
+    .node-effect {
+        --c: #83CD29;
+        --b: 6px;
+        --g: 5px;
+
+        padding: calc(var(--g) + var(--b));
+        --_g: #0000 25%, var(--c) 0;
+        background:
+            conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) var(--_i, 200%) 0 /200% var(--_i, var(--b)) no-repeat,
+            conic-gradient(at bottom var(--b) left var(--b), var(--_g)) 0 var(--_i, 200%)/var(--_i, var(--b)) 200% no-repeat !important;
+        transition: .3s, background-position .3s .3s !important;
+        cursor: pointer;
+    }
+
+    .node-effect:hover {
+        --_i: 100% !important;
+        transition: .3s, background-size .3s .3s !important;
+    }
+
+    .net-effect {
+        --c: #512BD4;
+        --b: 6px;
+        --g: 5px;
+
+        padding: calc(var(--g) + var(--b));
+        --_g: #0000 25%, var(--c) 0;
+        background:
+            conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) var(--_i, 200%) 0 /200% var(--_i, var(--b)) no-repeat,
+            conic-gradient(at bottom var(--b) left var(--b), var(--_g)) 0 var(--_i, 200%)/var(--_i, var(--b)) 200% no-repeat !important;
+        transition: .3s, background-position .3s .3s !important;
+        cursor: pointer;
+    }
+
+    .net-effect:hover {
+        --_i: 100% !important;
+        transition: .3s, background-size .3s .3s !important;
+    }
+
+    .html-effect {
+        --c: #E44D26;
+        --b: 6px;
+        --g: 5px;
+
+        padding: calc(var(--g) + var(--b));
+        --_g: #0000 25%, var(--c) 0;
+        background:
+            conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) var(--_i, 200%) 0 /200% var(--_i, var(--b)) no-repeat,
+            conic-gradient(at bottom var(--b) left var(--b), var(--_g)) 0 var(--_i, 200%)/var(--_i, var(--b)) 200% no-repeat !important;
+        transition: .3s, background-position .3s .3s !important;
+        cursor: pointer;
+    }
+
+    .html-effect:hover {
+        --_i: 100% !important;
+        transition: .3s, background-size .3s .3s !important;
+    }
+
+    .css-effect {
+        --c: #264DE4;
+        --b: 6px;
+        --g: 5px;
+
+        padding: calc(var(--g) + var(--b));
+        --_g: #0000 25%, var(--c) 0;
+        background:
+            conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) var(--_i, 200%) 0 /200% var(--_i, var(--b)) no-repeat,
+            conic-gradient(at bottom var(--b) left var(--b), var(--_g)) 0 var(--_i, 200%)/var(--_i, var(--b)) 200% no-repeat !important;
+        transition: .3s, background-position .3s .3s !important;
+        cursor: pointer;
+    }
+
+    .css-effect:hover {
+        --_i: 100% !important;
+        transition: .3s, background-size .3s .3s !important;
+    }
+
+    .typescript-effect {
+        --c: #3178C6;
+        --b: 6px;
+        --g: 5px;
+
+        padding: calc(var(--g) + var(--b));
+        --_g: #0000 25%, var(--c) 0;
+        background:
+            conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) var(--_i, 200%) 0 /200% var(--_i, var(--b)) no-repeat,
+            conic-gradient(at bottom var(--b) left var(--b), var(--_g)) 0 var(--_i, 200%)/var(--_i, var(--b)) 200% no-repeat !important;
+        transition: .3s, background-position .3s .3s !important;
+        cursor: pointer;
+    }
+
+    .typescript-effect:hover {
+        --_i: 100% !important;
+        transition: .3s, background-size .3s .3s !important;
+    }
+
+    .js-effect {
+        --c: #F7DF1E;
+        --b: 6px;
+        --g: 5px;
+
+        padding: calc(var(--g) + var(--b));
+        --_g: #0000 25%, var(--c) 0;
+        background:
+            conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) var(--_i, 200%) 0 /200% var(--_i, var(--b)) no-repeat,
+            conic-gradient(at bottom var(--b) left var(--b), var(--_g)) 0 var(--_i, 200%)/var(--_i, var(--b)) 200% no-repeat !important;
+        transition: .3s, background-position .3s .3s !important;
+        cursor: pointer;
+    }
+
+    .js-effect:hover {
+        --_i: 100% !important;
+        transition: .3s, background-size .3s .3s !important;
+    }
+
+    .git-effect {
+        --c: #F03C2E;
+        --b: 6px;
+        --g: 5px;
+
+        padding: calc(var(--g) + var(--b));
+        --_g: #0000 25%, var(--c) 0;
+        background:
+            conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) var(--_i, 200%) 0 /200% var(--_i, var(--b)) no-repeat,
+            conic-gradient(at bottom var(--b) left var(--b), var(--_g)) 0 var(--_i, 200%)/var(--_i, var(--b)) 200% no-repeat !important;
+        transition: .3s, background-position .3s .3s !important;
+        cursor: pointer;
+    }
+
+    .git-effect:hover {
+        --_i: 100% !important;
+        transition: .3s, background-size .3s .3s !important;
+    }
+
+    .gitlab-effect {
+        --c: #FCA326;
+        --b: 6px;
+        --g: 5px;
+
+        padding: calc(var(--g) + var(--b));
+        --_g: #0000 25%, var(--c) 0;
+        background:
+            conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) var(--_i, 200%) 0 /200% var(--_i, var(--b)) no-repeat,
+            conic-gradient(at bottom var(--b) left var(--b), var(--_g)) 0 var(--_i, 200%)/var(--_i, var(--b)) 200% no-repeat !important;
+        transition: .3s, background-position .3s .3s !important;
+        cursor: pointer;
+    }
+
+    .gitlab-effect:hover {
+        --_i: 100% !important;
+        transition: .3s, background-size .3s .3s !important;
+    }
+
+    .tailwind-effect {
+        --c: #49AEB4;
+        --b: 6px;
+        --g: 5px;
+
+        padding: calc(var(--g) + var(--b));
+        --_g: #0000 25%, var(--c) 0;
+        background:
+            conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) var(--_i, 200%) 0 /200% var(--_i, var(--b)) no-repeat,
+            conic-gradient(at bottom var(--b) left var(--b), var(--_g)) 0 var(--_i, 200%)/var(--_i, var(--b)) 200% no-repeat !important;
+        transition: .3s, background-position .3s .3s !important;
+        cursor: pointer;
+    }
+
+    .tailwind-effect:hover {
+        --_i: 100% !important;
+        transition: .3s, background-size .3s .3s !important;
+    }
+
+    .microsoft-effect {
+        --c: #00A4EF;
+        --b: 6px;
+        --g: 5px;
+
+        padding: calc(var(--g) + var(--b));
+        --_g: #0000 25%, var(--c) 0;
+        background:
+            conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) var(--_i, 200%) 0 /200% var(--_i, var(--b)) no-repeat,
+            conic-gradient(at bottom var(--b) left var(--b), var(--_g)) 0 var(--_i, 200%)/var(--_i, var(--b)) 200% no-repeat !important;
+        transition: .3s, background-position .3s .3s !important;
+        cursor: pointer;
+    }
+
+    .microsoft-effect:hover {
+        --_i: 100% !important;
+        transition: .3s, background-size .3s .3s !important;
+    }
+
+    .linux-effect {
+        --c: #003764;
+        --b: 6px;
+        --g: 5px;
+
+        padding: calc(var(--g) + var(--b));
+        --_g: #0000 25%, var(--c) 0;
+        background:
+            conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) var(--_i, 200%) 0 /200% var(--_i, var(--b)) no-repeat,
+            conic-gradient(at bottom var(--b) left var(--b), var(--_g)) 0 var(--_i, 200%)/var(--_i, var(--b)) 200% no-repeat !important;
+        transition: .3s, background-position .3s .3s !important;
+        cursor: pointer;
+    }
+
+    .linux-effect:hover {
+        --_i: 100% !important;
+        transition: .3s, background-size .3s .3s !important;
+    }
+
+    .mysql-effect {
+        --c: #00678C;
+        --b: 6px;
+        --g: 5px;
+
+        padding: calc(var(--g) + var(--b));
+        --_g: #0000 25%, var(--c) 0;
+        background:
+            conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) var(--_i, 200%) 0 /200% var(--_i, var(--b)) no-repeat,
+            conic-gradient(at bottom var(--b) left var(--b), var(--_g)) 0 var(--_i, 200%)/var(--_i, var(--b)) 200% no-repeat !important;
+        transition: .3s, background-position .3s .3s !important;
+        cursor: pointer;
+    }
+
+    .mysql-effect:hover {
+        --_i: 100% !important;
+        transition: .3s, background-size .3s .3s !important;
+    }
+
+    .figma-effect {
+        --c: #F24E1E;
+        --b: 6px;
+        --g: 5px;
+
+        padding: calc(var(--g) + var(--b));
+        --_g: #0000 25%, var(--c) 0;
+        background:
+            conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) var(--_i, 200%) 0 /200% var(--_i, var(--b)) no-repeat,
+            conic-gradient(at bottom var(--b) left var(--b), var(--_g)) 0 var(--_i, 200%)/var(--_i, var(--b)) 200% no-repeat !important;
+        transition: .3s, background-position .3s .3s !important;
+        cursor: pointer;
+    }
+
+    .figma-effect:hover {
+        --_i: 100% !important;
+        transition: .3s, background-size .3s .3s !important;
+    }
+
+    .zeplin-effect {
+        --c: #FFBE22;
+        --b: 6px;
+        --g: 5px;
+
+        padding: calc(var(--g) + var(--b));
+        --_g: #0000 25%, var(--c) 0;
+        background:
+            conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) var(--_i, 200%) 0 /200% var(--_i, var(--b)) no-repeat,
+            conic-gradient(at bottom var(--b) left var(--b), var(--_g)) 0 var(--_i, 200%)/var(--_i, var(--b)) 200% no-repeat !important;
+        transition: .3s, background-position .3s .3s !important;
+        cursor: pointer;
+    }
+
+    .zeplin-effect:hover {
+        --_i: 100% !important;
+        transition: .3s, background-size .3s .3s !important;
+    }
+
+    .jira-effect {
+        --c: #2684FF;
+        --b: 6px;
+        --g: 5px;
+
+        padding: calc(var(--g) + var(--b));
+        --_g: #0000 25%, var(--c) 0;
+        background:
+            conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g)) var(--_i, 200%) 0 /200% var(--_i, var(--b)) no-repeat,
+            conic-gradient(at bottom var(--b) left var(--b), var(--_g)) 0 var(--_i, 200%)/var(--_i, var(--b)) 200% no-repeat !important;
+        transition: .3s, background-position .3s .3s !important;
+        cursor: pointer;
+    }
+
+    .jira-effect:hover {
+        --_i: 100% !important;
+        transition: .3s, background-size .3s .3s !important;
+    }
+</style>

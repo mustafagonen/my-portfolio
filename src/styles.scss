@@ -22,7 +22,9 @@ $delete: #D92222;
 
 * {
     // font-family: "Be Vietnam Pro", sans-serif;
+    font-family: "Montserrat", sans-serif;
     letter-spacing: -.2px !important;
+    font-weight: 500;
     font-size: 13px;
     box-sizing: border-box;
 }
@@ -549,6 +551,14 @@ td {
     background: $navyblue;
     font-size: 12px;
     font-weight: 400;
+}
+
+.gradient-logo {
+    background: linear-gradient(90deg, #10B981, #48BACA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
 
 //Shortcut Classes
