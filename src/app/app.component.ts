@@ -22,7 +22,7 @@ import { MgFooterComponent } from './components/footer/footer.component';
 })
 export class AppComponent {
 
-  title = 'angular-17-mg-portfolio';
+  title = 'mg-portfolio';
   isLogin: any = false;
   isLoginUrl: any = '';
 
